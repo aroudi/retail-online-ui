@@ -1,0 +1,7 @@
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid" fxLayoutWrap>
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let company of companyList">
+      <company-card [company]="company"></company-card>
+    </div>
+  </div>
+</div>

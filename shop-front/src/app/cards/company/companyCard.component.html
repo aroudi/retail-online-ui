@@ -1,0 +1,35 @@
+<div class="fury-preview-card" fxLayout="column" fxLayout.gt-sm="row">
+  <div class="preview">
+    <mat-card>
+    <mat-card-header>
+      <img mat-card-avatar src="../../../assets/img/avatars/3.jpg">
+      <mat-card-subtitle>
+        companyType
+      </mat-card-subtitle>
+      <mat-card-title>{{company.compName}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="../../../assets/img/backgrounds/1.jpg">
+    <mat-card-content>
+      <p>{{company.compDesc}}</p>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <div fxLayout="row">
+        <button mat-icon-button>
+          <mat-icon>share</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <span fxFlex></span>
+        <button mat-button>
+          More Info
+        </button>
+        <button mat-button>
+          Save as
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+    </div>
+  </div>

@@ -1,0 +1,13 @@
+<mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="pageEvent =OnPageChange($event)">
+</mat-paginator>
+
+<mat-grid-list [cols]="breakpoint" rowHeight="4:5" (window:resize)="onResize($event)" >
+  <mat-grid-tile *ngFor="let company of pagedList">
+    <div>
+      <company-card [company]="company"></company-card>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
